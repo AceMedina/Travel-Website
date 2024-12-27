@@ -1,0 +1,317 @@
+/* Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    z-index: 10;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .title {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Chela One', cursive;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar a.active {
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Header */
+header {
+    background-image: url("Images/cebu.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f2f2f2;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: 'Chela One', cursive;
+    letter-spacing: 4px;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header-text p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    margin-top: 80px;
+}
+
+.about-content {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-family: 'Chela One', cursive;
+    font-size: 2.5rem;
+    color: #333333;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.about-image {
+    width: 35%;
+    padding-left: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tourist Destinations */
+.tourist-destinations {
+    margin-top: 100px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.tourist-destinations h2 {
+    font-size: 2.5rem;
+    font-family: 'Chela One', cursive;
+    letter-spacing: 3px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.destination {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: auto;
+    padding: 10px 0 20px 0;
+    overflow: hidden;
+}
+
+.destination img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-title {
+    font-family: 'lora', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.destination-paragraph {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #555555;
+    margin: 10px 0;
+}
+
+.destination-details {
+    display: none;
+}
+
+.read-more-btn {
+    padding: 8px 15px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.read-more-btn:hover {
+    background-color: #555555;
+}
+
+/* Contact Section */
+.contact-form-section {
+    padding: 80px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-family: 'Chela One', cursive;
+    font-size: 2.5rem;
+    color: #333333;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #555555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #333333;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #f2f2f2;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #555555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .destination-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about-image {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .contact-form-section {
+        padding: 60px 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
